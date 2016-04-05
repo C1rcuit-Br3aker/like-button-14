@@ -1,13 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  num: 0,
+  score: 0,
 
-  up(num) {
-    this.set(`num`, this.num + 1);
+  up(score) {
+    this.set(`score`, this.score + 1);
   },
 
-  down(num) {
-    this.set(`num`, this.num - 1);
+  down(score) {
+    this.set(`score`, this.score - 1);
   },
 });
