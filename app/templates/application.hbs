@@ -6,7 +6,7 @@
       {{log model}}
       {{movie.title}}
       <p>
-        {{like-counter score=movie.score}}
+        {{like-counter score=movie.score movieId=movie._id}}
       </p>
     </li>
   {{/each}}
