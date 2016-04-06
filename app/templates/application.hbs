@@ -1,3 +1,14 @@
 <h1 id="title">Welcome to Ember</h1>
 
+<ul>
+  {{#each model as |movie|}}
+    <li>
+      {{log model}}
+      {{movie.title}}
+      <p>
+        {{like-counter score=movie.score movieId=movie._id}}
+      </p>
+    </li>
+  {{/each}}
+</ul>
 {{outlet}}
